@@ -29,3 +29,11 @@
 </Project>
 
 ```
+
+⭐ Add Command: 
+```
+PM> add-migration FirstMigration
+```
+```
+PM> update-database
+```
