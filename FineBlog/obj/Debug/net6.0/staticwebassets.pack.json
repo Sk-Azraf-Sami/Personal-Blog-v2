@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\FineBlog.bundle.scp.css"
     },
     {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\blog\\assets\\favicon.ico"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\img\\about-bg.jpg",
+      "PackagePath": "staticwebassets\\blog\\assets\\img\\about-bg.jpg"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\img\\contact-bg.jpg",
+      "PackagePath": "staticwebassets\\blog\\assets\\img\\contact-bg.jpg"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\img\\home-bg.jpg",
+      "PackagePath": "staticwebassets\\blog\\assets\\img\\home-bg.jpg"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\img\\post-bg.jpg",
+      "PackagePath": "staticwebassets\\blog\\assets\\img\\post-bg.jpg"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\assets\\img\\post-sample-image.jpg",
+      "PackagePath": "staticwebassets\\blog\\assets\\img\\post-sample-image.jpg"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\css\\styles.css",
+      "PackagePath": "staticwebassets\\blog\\css\\styles.css"
+    },
+    {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\blog\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\blog\\js\\scripts.js"
+    },
+    {
       "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
