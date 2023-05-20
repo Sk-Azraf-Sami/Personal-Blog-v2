@@ -279,3 +279,4 @@ G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Co
 G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\FineBlog\FineBlog\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
