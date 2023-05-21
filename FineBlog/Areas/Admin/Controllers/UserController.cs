@@ -13,25 +13,25 @@ namespace FineBlog.Areas.Admin.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly INotyfService _notification; 
-        public UserController(UserManager<ApplicationUser> userManager, 
-                             SignInManager<ApplicationUser> signInManager, 
+        private readonly INotyfService _notification;
+        public UserController(UserManager<ApplicationUser> userManager,
+                             SignInManager<ApplicationUser> signInManager,
                              INotyfService notyfService)
         {
-            _notification = notyfService;   
+            _notification = notyfService;
             _userManager = userManager;
-            _signInManager = signInManager; 
+            _signInManager = signInManager;
         }
         public IActionResult Index()
         {
             return View();
         }
-        
+
         // before page address : https://localhost:7189/admin/user/login/
         [HttpGet("Login")] // now address: https://localhost:7189/login
         public IActionResult Login()
         {
-            if(!HttpContext.User.Identity!.IsAuthenticated)
+            if (!HttpContext.User.Identity!.IsAuthenticated)
             {
                 return View(new LoginVM());
             }
@@ -50,9 +50,15 @@ namespace FineBlog.Areas.Admin.Controllers
             }
 
             var existingUser = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == vm.Username);
-            if (existingUser == null) 
+            if (existingUser == null)
             {
                 _notification.Error("Username does not exist");
+                return View(vm);
+            }
+            var verifyPassword = await _userManager.CheckPasswordAsync(existingUser, vm.Password);
+            if (!verifyPassword)
+            {
+                _notification.Error("Password does not match");
                 return View(vm);
             }
             await _signInManager.PasswordSignInAsync(vm.Username, vm.Password, vm.RememberMe, true);
@@ -62,3 +68,6 @@ namespace FineBlog.Areas.Admin.Controllers
         }
     }
 }
+
+
+

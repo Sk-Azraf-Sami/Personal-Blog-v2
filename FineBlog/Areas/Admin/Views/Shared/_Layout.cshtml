@@ -1,4 +1,14 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity;
+@model FineBlog.Models.ApplicationUser
+@inject UserManager<ApplicationUser> _userManager;
+@{
+    var loggedInUser = new ApplicationUser();
+    loggedInUser = _userManager.Users?.FirstOrDefault(x => x.UserName == User.Identity!.Name);
+}
+
+
+
+
 @*
 <title>@ViewData["Title"] - FineBlog</title>    
 @RenderBody()      
@@ -149,7 +159,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                    @loggedInUser?.FirstName @loggedInUser?.LastName
+                                </span>
                            
                             </a>
                             <!-- Dropdown - User Information -->
