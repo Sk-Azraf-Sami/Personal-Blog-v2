@@ -40,6 +40,13 @@ namespace FineBlog.Areas.Admin.Controllers
             return View(vm);
         }
 
+        [Authorize(Roles  = "Admin")]
+        [HttpGet]  
+        public IActionResult Register()
+        {
+            return View(new RegisterVM());
+        }
+
         // before page address : https://localhost:7189/admin/user/login/
         [HttpGet("Login")] // now address: https://localhost:7189/login
         public IActionResult Login()
