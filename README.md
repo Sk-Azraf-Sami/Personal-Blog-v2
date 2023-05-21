@@ -3,9 +3,12 @@
 ⭐ Theme Link: 
 1. https://startbootstrap.com/theme/clean-blog
 2. https://startbootstrap.com/theme/sb-admin-2
+<br>
+⭐ Toast Notification Github Link: [GitHub](https://github.com/aspnetcorehero/ToastNotification)
+<br> <br>
 
-⭐ cproj: 
-```cproj
+⭐ cproj: <br>
+```
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
