@@ -66,6 +66,14 @@ namespace FineBlog.Areas.Admin.Controllers
             return RedirectToAction("Index", "User", new { area = "Admin" });
 
         }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            _signInManager.SignOutAsync();
+            _notification.Success("You are logged out successfully");
+            return RedirectToAction("Index", "Home", new { area = ""});
+        }
     }
 }
 
