@@ -31,7 +31,13 @@ namespace FineBlog.Areas.Admin.Controllers
         [HttpGet("Login")] // now address: https://localhost:7189/login
         public IActionResult Login()
         {
-            return View(new LoginVM());
+            if(!HttpContext.User.Identity!.IsAuthenticated)
+            {
+                return View(new LoginVM());
+            }
+            //If login is successful and user in admin page
+            //If https://localhost:7189/login enter this address, redirect to admin page, not in login page 
+            return RedirectToAction("Index", "User", new { area = "Admin" });
         }
 
         // before page address : https://localhost:7189/admin/user/login/
