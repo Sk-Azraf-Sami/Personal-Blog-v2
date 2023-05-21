@@ -6,6 +6,7 @@
 
 ⭐ Toast Notification Github Link: [GitHub](https://github.com/aspnetcorehero/ToastNotification)
 <br> 
+⭐ Add advanced interaction controls to your HTML tables: [Link](https://datatables.net/)
 
 ⭐ cproj: <br>
 ```
