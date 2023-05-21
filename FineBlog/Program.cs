@@ -20,6 +20,14 @@ builder.Services.AddScoped<IDbInitializer,DbInitializer>();
 
 builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 
+///--------------Add cookies
+/// if anybody want to access directly https://localhost:7189/admin/user/
+/// redirect to login page 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/login";
+});
+
 var app = builder.Build();
 DataSeeding(); 
 // Configure the HTTP request pipeline.
