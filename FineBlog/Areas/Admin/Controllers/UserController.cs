@@ -52,6 +52,24 @@ namespace FineBlog.Areas.Admin.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
+        public async Task<IActionResult> ResetPassword(string id)
+        {
+            var existingUser = await _userManager.FindByIdAsync(id);
+            if (existingUser == null)
+            {
+                _notification.Error("User doesn't exist!");
+                return View();
+            }
+            var vm = new ResetPasswordVM()
+            {
+                Id = existingUser.Id,
+                UserName = existingUser.UserName,
+            };
+            return View(vm);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
         public IActionResult Register()
         {
             return View(new RegisterVM());

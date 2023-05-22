@@ -5,7 +5,7 @@
 @model List<FineBlog.ViewModels.UserVM>
 
 @{
-    ViewData["Title"] = "Users";  
+    ViewData["Title"] = "Index";  
 }
 
 <div class="container-fluid">
@@ -33,10 +33,10 @@
                             <td>@user.FirstName</td>
                             <td>@user.LastName</td>
                             <td>@user.UserName</td>
-                            <td>@user.Role</td>
                             <td>@user.Email</td>
+                            <td>@user.Role</td>
                             <td>
-                                <a class="btn btn-secondary">Forget Password</a>
+                                <a class="btn btn-secondary" asp-action="Reset Password" asp-controller="User" asp-route-id="@user.Id">Reset Password</a>
                             </td>
                         </tr>
                     }
