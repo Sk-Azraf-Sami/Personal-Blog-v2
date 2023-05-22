@@ -192,11 +192,20 @@ namespace FineBlog.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Logout()
         {
             _signInManager.SignOutAsync();
             _notification.Success("You are logged out successfully");
             return RedirectToAction("Index", "Home", new { area = "" });
+        }
+
+        //page 404
+        [HttpGet("AccessDenied")]
+        [Authorize]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }
