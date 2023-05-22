@@ -1,10 +1,12 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
 using AspNetCoreHero.ToastNotification.Notyf;
 using FineBlog.Models;
+using FineBlog.Utilities;
 using FineBlog.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 namespace FineBlog.Areas.Admin.Controllers
@@ -26,7 +28,7 @@ namespace FineBlog.Areas.Admin.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task <IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var users = await _userManager.Users.ToListAsync();
             var vm = users.Select(x => new UserVM()
@@ -36,15 +38,67 @@ namespace FineBlog.Areas.Admin.Controllers
                 LastName = x.LastName,
                 UserName = x.UserName,
             }).ToList();
-           
+
             return View(vm);
         }
 
-        [Authorize(Roles  = "Admin")]
-        [HttpGet]  
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
         public IActionResult Register()
         {
             return View(new RegisterVM());
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterVM vm)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(vm);
+            }
+            var checkUserByEmail = await _userManager.FindByEmailAsync(vm.Email);
+            if (checkUserByEmail != null)
+            {
+                _notification.Error("Email already exists");
+                return View(vm);
+            }
+            var checkUserByUsername = await _userManager.FindByNameAsync(vm.UserName);
+            if (checkUserByUsername != null)
+            {
+                _notification.Error("Username already exists");
+                return View(vm);
+            }
+
+            var applicationUser = new ApplicationUser()
+            {
+                Email = vm.Email,
+                UserName = vm.UserName,
+                FirstName = vm.FirstName,
+                LastName = vm.LastName,
+            };
+
+            var result = await _userManager.CreateAsync(applicationUser, vm.Password);
+            if (result.Succeeded)
+            {
+                if (vm.IsAdmin)
+                {
+                    await _userManager.AddToRoleAsync(applicationUser, WebsiteRoles.WebsiteAdmin);
+                }
+                else
+                {
+                    await _userManager.AddToRoleAsync(applicationUser, WebsiteRoles.WebsiteAuthor);
+                }
+                _notification.Success("User is registered successfully");
+                RedirectToAction("Index", "User", new { area = "Admin" });
+            }
+
+            else
+            {
+                _notification.Error("Enter Strong Password!"); //added by me----------
+            }
+
+            return View(vm);
         }
 
         // before page address : https://localhost:7189/admin/user/login/
@@ -92,7 +146,7 @@ namespace FineBlog.Areas.Admin.Controllers
         {
             _signInManager.SignOutAsync();
             _notification.Success("You are logged out successfully");
-            return RedirectToAction("Index", "Home", new { area = ""});
+            return RedirectToAction("Index", "Home", new { area = "" });
         }
     }
 }

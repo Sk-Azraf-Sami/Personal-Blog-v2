@@ -12,11 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(Options=>Options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlServer(connectionString));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
-builder.Services.AddScoped<IDbInitializer,DbInitializer>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 
@@ -29,7 +29,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 var app = builder.Build();
-DataSeeding(); 
+DataSeeding();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -60,7 +60,7 @@ app.Run();
 
 void DataSeeding()
 {
-    using(var scope = app.Services.CreateScope())
+    using (var scope = app.Services.CreateScope())
     {
         var DbInitialize = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
         DbInitialize.Initialize();
