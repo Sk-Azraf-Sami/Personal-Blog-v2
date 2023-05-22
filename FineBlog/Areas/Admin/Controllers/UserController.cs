@@ -161,7 +161,7 @@ namespace FineBlog.Areas.Admin.Controllers
             }
             //If login is successful and user in admin page
             //If https://localhost:7189/login enter this address, redirect to admin page, not in login page 
-            return RedirectToAction("Index", "User", new { area = "Admin" });
+            return RedirectToAction("Index", "Post", new { area = "Admin" });
         }
 
         // before page address : https://localhost:7189/admin/user/login/
@@ -187,7 +187,7 @@ namespace FineBlog.Areas.Admin.Controllers
             }
             await _signInManager.PasswordSignInAsync(vm.Username, vm.Password, vm.RememberMe, true);
             _notification.Success("Login Successful");
-            return RedirectToAction("Index", "User", new { area = "Admin" });
+            return RedirectToAction("Index", "Post", new { area = "Admin" });
 
         }
 

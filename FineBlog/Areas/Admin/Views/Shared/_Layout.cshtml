@@ -70,6 +70,8 @@
 
             <hr class="sidebar-divider my-0">
 
+            @if (User.IsInRole("Admin"))
+            {
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
@@ -78,11 +80,9 @@
                 </a>
             </li>
 
-            
+
 
             <!-- Nav Item - Pages Collapse Menu -->
-           
-
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -97,27 +97,20 @@
                         <a class="collapse-item" href="utilities-color.html">About</a>
                         <a class="collapse-item" href="utilities-border.html">Contact</a>
                         <a class="collapse-item" href="utilities-animation.html">Privacy Policy</a>
-                   
+
                     </div>
                 </div>
             </li>
 
             <!-- Divider -->
-            
-
             <!-- Heading -->
-            
-
             <!-- Nav Item - Pages Collapse Menu -->
-           
-
             <!-- Nav Item - Charts -->
-           
             <!-- Nav Item - Tables -->
-           
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+            }
+            
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
