@@ -37,8 +37,16 @@ namespace FineBlog.Areas.Admin.Controllers
                 FirstName = x.FirstName,
                 LastName = x.LastName,
                 UserName = x.UserName,
+                Email = x.Email,
             }).ToList();
 
+            // assign user role 
+            foreach(var user in vm)
+            {
+                var singleUser = await _userManager.FindByIdAsync(user.Id);
+                var role = await _userManager.GetRolesAsync(singleUser);
+                user.Role = role.FirstOrDefault(); 
+            }
             return View(vm);
         }
 

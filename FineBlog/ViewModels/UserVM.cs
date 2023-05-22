@@ -1,4 +1,6 @@
-﻿namespace FineBlog.ViewModels
+﻿using System.Security.Policy;
+
+namespace FineBlog.ViewModels
 {
     public class UserVM
     {
@@ -6,5 +8,7 @@
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? UserName { get; set; }
+        public string? Email { get; set; }
+        public string? Role { get; set; }
     }
 }
