@@ -90,7 +90,7 @@ namespace FineBlog.Areas.Admin.Controllers
                     await _userManager.AddToRoleAsync(applicationUser, WebsiteRoles.WebsiteAuthor);
                 }
                 _notification.Success("User is registered successfully");
-                RedirectToAction("Index", "User", new { area = "Admin" });
+                return RedirectToAction("Index", "User", new { area = "Admin" });
             }
 
             else
