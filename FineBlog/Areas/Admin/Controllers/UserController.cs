@@ -69,6 +69,30 @@ namespace FineBlog.Areas.Admin.Controllers
         }
 
         [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM vm)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(vm);
+            }
+            var existingUser = await _userManager.FindByIdAsync(vm.Id);
+            if(existingUser ==  null)
+            {
+                _notification.Error("User doesn't exist!!");
+                return View(vm);
+            }
+            var token = await _userManager.GeneratePasswordResetTokenAsync(existingUser);
+            var result = await _userManager.ResetPasswordAsync(existingUser,token,vm.NewPassword); 
+            if(result.Succeeded)
+            {
+                _notification.Success("Password reset successfully");
+                return RedirectToAction(nameof(Index));
+            }
+            return View(vm);
+        }
+
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult Register()
         {
