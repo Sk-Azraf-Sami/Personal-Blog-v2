@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jSgJXuYN8lzU8Yy0lbS5BXggIZmLCtXXUdSK4lnTkxA=",
+  "Hash": "nRnoPc1SbFgiEREEh2oT3QbUn9zCCVpVcIFxqY3o5XE=",
   "Source": "FineBlog",
   "BasePath": "_content/FineBlog",
   "Mode": "Default",
@@ -33828,6 +33828,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\thumbnail-default.png",
+      "SourceId": "FineBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\FineBlog\\FineBlog\\wwwroot\\",
+      "BasePath": "_content/FineBlog",
+      "RelativePath": "Thumbnails/thumbnail-default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Thumbnails\\thumbnail-default.png"
     }
   ]
 }

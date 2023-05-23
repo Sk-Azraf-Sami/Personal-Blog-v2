@@ -1,6 +1,8 @@
-﻿namespace FineBlog.Models
+﻿using FineBlog.Models;
+
+namespace FineBlog.ViewModels
 {
-    public class Post
+    public class CreatePostVM
     {
         public int Id { get; set; }
         public string? Title { get; set; }
@@ -8,13 +10,8 @@
 
         //relation 
         public string? ApplicationUserId { get; set; }
-        public ApplicationUser? ApplicationUser { get; set; }
-        public DateTime? CreatedDate { get; set; } = DateTime.Now;
-
         public string? Description { get; set; }
-        public string? Slug { get; set; } //URL
-        //PM> add-migration ThumbnailUrlAdded
-        //PM> update-database
         public string? ThumbnailUrl { get; set; }
+        public IFormFile? Thumbnail { get; set; }
     }
 }
