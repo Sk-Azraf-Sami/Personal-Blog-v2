@@ -54,7 +54,29 @@ namespace FineBlog.Areas.Admin.Controllers
             }).ToList();
 
             return View(listOfPostsVM); 
-        }     
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var post = await _context.Posts!.FirstOrDefaultAsync(x => x.Id == id);
+            if (post == null)
+            {
+                _notification.Error("Post not found!");
+                return View();
+            }
+
+            var vm = new CreatePostVM();
+            {
+                vm.Id = post.Id;
+                vm.Title = post.Title;
+                vm.ShortDescription = post.ShortDescription;
+                vm.ApplicationUserId = post.ApplicationUserId;
+                vm.ThumbnailUrl = post.ThumbnailUrl;
+                vm.CreatedDate = DateTime.Now;
+            }
+            return View(vm);
+        }
 
         [HttpGet]
         public IActionResult Create()
@@ -95,7 +117,7 @@ namespace FineBlog.Areas.Admin.Controllers
             return RedirectToAction("Index"); 
         }
 
-
+        
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
