@@ -71,11 +71,40 @@ namespace FineBlog.Areas.Admin.Controllers
                 vm.Id = post.Id;
                 vm.Title = post.Title;
                 vm.ShortDescription = post.ShortDescription;
-                vm.ApplicationUserId = post.ApplicationUserId;
+                vm.Description = post.Description; 
+                //vm.ApplicationUserId = post.ApplicationUserId;
                 vm.ThumbnailUrl = post.ThumbnailUrl;
-                vm.CreatedDate = DateTime.Now;
+                //vm.CreatedDate = DateTime.Now;
             }
             return View(vm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(CreatePostVM vm)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(vm);
+            }
+            var post = await _context.Posts!.FirstOrDefaultAsync(x => x.Id == vm.Id);
+            if(post == null)
+            {
+                _notification.Error("Post not found");
+                return View();
+            }
+
+            post.Title = vm.Title;
+            post.ShortDescription = vm.ShortDescription;
+            post.Description = vm.Description;
+
+            if (vm.Thumbnail != null)
+            {
+                post.ThumbnailUrl = UploadImage(vm.Thumbnail);
+            }
+
+            await _context.SaveChangesAsync();
+            _notification.Success("Post updated successfully"); 
+            return RedirectToAction("Index", "Post", new {area = "Admin"}); 
         }
 
         [HttpGet]

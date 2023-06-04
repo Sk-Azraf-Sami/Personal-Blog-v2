@@ -30784,6 +30784,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\e04ea5af-22ec-408e-a9fe-57fcf827a15f_2023-05-04 (52).png))">
       <SourceType>Package</SourceType>
       <SourceId>FineBlog</SourceId>

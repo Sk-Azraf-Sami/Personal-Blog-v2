@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qGAN/6weCv5BvwYjPZ7sIcmK+3+r6g4QSfWQm10RcZU=",
+  "Hash": "ObDteYTADuYsa4L8vg+a67fyTcmU45fOIEy8TDNXCPU=",
   "Source": "FineBlog",
   "BasePath": "_content/FineBlog",
   "Mode": "Default",
@@ -33828,6 +33828,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png",
+      "SourceId": "FineBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\FineBlog\\FineBlog\\wwwroot\\",
+      "BasePath": "_content/FineBlog",
+      "RelativePath": "Thumbnails/7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Thumbnails\\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png"
+    },
+    {
+      "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png",
+      "SourceId": "FineBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\FineBlog\\FineBlog\\wwwroot\\",
+      "BasePath": "_content/FineBlog",
+      "RelativePath": "Thumbnails/b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Thumbnails\\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png"
     },
     {
       "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\e04ea5af-22ec-408e-a9fe-57fcf827a15f_2023-05-04 (52).png",
