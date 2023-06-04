@@ -66,6 +66,17 @@ namespace FineBlog.Areas.Admin.Controllers
                 return View();
             }
 
+            // admin can delete all page
+            // general user can delete own page only
+            // for this reason, authorization is added
+            var loggedInUser = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == User.Identity!.Name);
+            var loggedInUserRole = await _userManager.GetRolesAsync(loggedInUser!);
+            if (loggedInUserRole[0] != WebsiteRoles.WebsiteAdmin && loggedInUser!.Id != post.ApplicationUserId) 
+            {
+                _notification.Error("You are not authorized");
+                return RedirectToAction("Index"); 
+            }
+
             var vm = new CreatePostVM();
             {
                 vm.Id = post.Id;
