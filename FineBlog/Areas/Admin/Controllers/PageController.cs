@@ -43,6 +43,8 @@ namespace FineBlog.Areas.Admin.Controllers
         return View(vm);
     }
 
+        /*---------------- About ------------------*/
+
         [HttpPost]
         public async Task<IActionResult> About(PageVM vm)
         {
@@ -65,7 +67,58 @@ namespace FineBlog.Areas.Admin.Controllers
 
             await _context .SaveChangesAsync();
             _notification.Success("About page updated successfully");
-            return RedirectToAction("Index", "Page", new {area = "Admin"}); 
+            return RedirectToAction("About", "Page", new {area = "Admin"}); 
+        }
+
+        /*------------ Contact ------------------*/
+        [HttpPost]
+        public async Task<IActionResult> Contact(PageVM vm)
+        {
+            if (!ModelState.IsValid) { return View(vm); }
+            var aboutPage = await _context.Pages!.FirstOrDefaultAsync(x => x.Slug == "contact");
+            if (aboutPage == null)
+            {
+                _notification.Error("Page not found");
+                return View();
+            }
+
+            aboutPage.Title = vm.Title;
+            aboutPage.ShortDescription = vm.ShortDescription;
+            aboutPage.Description = vm.Description;
+
+            if (vm.ThumbnailUrl != null)
+            {
+                aboutPage.ThumbnailUrl = UploadImage(vm.Thumbnail);
+            }
+
+            await _context.SaveChangesAsync();
+            _notification.Success("Contact page updated successfully");
+            return RedirectToAction("Contact", "Page", new { area = "Admin" });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Privacy(PageVM vm)
+        {
+            if (!ModelState.IsValid) { return View(vm); }
+            var aboutPage = await _context.Pages!.FirstOrDefaultAsync(x => x.Slug == "privacy");
+            if (aboutPage == null)
+            {
+                _notification.Error("Page not found");
+                return View();
+            }
+
+            aboutPage.Title = vm.Title;
+            aboutPage.ShortDescription = vm.ShortDescription;
+            aboutPage.Description = vm.Description;
+
+            if (vm.ThumbnailUrl != null)
+            {
+                aboutPage.ThumbnailUrl = UploadImage(vm.Thumbnail);
+            }
+
+            await _context.SaveChangesAsync();
+            _notification.Success("Private page updated successfully");
+            return RedirectToAction("Privacy", "Page", new { area = "Admin" });
         }
 
         private string? UploadImage(IFormFile file)
