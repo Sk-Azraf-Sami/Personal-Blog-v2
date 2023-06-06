@@ -60,7 +60,7 @@ namespace FineBlog.Areas.Admin.Controllers
             aboutPage.ShortDescription = vm.ShortDescription;
             aboutPage.Description = vm.Description;
 
-            if(vm.ThumbnailUrl != null)
+            if(vm.Thumbnail != null)
             {
                 aboutPage.ThumbnailUrl = UploadImage(vm.Thumbnail); 
             }
@@ -86,7 +86,7 @@ namespace FineBlog.Areas.Admin.Controllers
             aboutPage.ShortDescription = vm.ShortDescription;
             aboutPage.Description = vm.Description;
 
-            if (vm.ThumbnailUrl != null)
+            if (vm.Thumbnail != null)
             {
                 aboutPage.ThumbnailUrl = UploadImage(vm.Thumbnail);
             }
@@ -96,6 +96,7 @@ namespace FineBlog.Areas.Admin.Controllers
             return RedirectToAction("Contact", "Page", new { area = "Admin" });
         }
 
+        /*-------------- privacy -------------------------*/
         [HttpPost]
         public async Task<IActionResult> Privacy(PageVM vm)
         {
@@ -111,7 +112,7 @@ namespace FineBlog.Areas.Admin.Controllers
             aboutPage.ShortDescription = vm.ShortDescription;
             aboutPage.Description = vm.Description;
 
-            if (vm.ThumbnailUrl != null)
+            if (vm.Thumbnail != null)
             {
                 aboutPage.ThumbnailUrl = UploadImage(vm.Thumbnail);
             }

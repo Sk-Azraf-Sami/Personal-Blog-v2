@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JYoVjiMBHXofAOGdVykdMoh1/LG3pnTa8766/aKgyEA=",
+  "Hash": "C8ztiwGGaPHIlmZ8zPIerdpAJsZaCUfEwYNImsCVu/I=",
   "Source": "FineBlog",
   "BasePath": "_content/FineBlog",
   "Mode": "Default",
@@ -33862,6 +33862,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Thumbnails\\89012ead-1dd3-43b6-b911-0949f8291f40_2023-05-08 (87).png"
+    },
+    {
+      "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\900f31c5-4151-49e1-89bf-1089ef4b83d9_2023-05-04 (52).png",
+      "SourceId": "FineBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\FineBlog\\FineBlog\\wwwroot\\",
+      "BasePath": "_content/FineBlog",
+      "RelativePath": "Thumbnails/900f31c5-4151-49e1-89bf-1089ef4b83d9_2023-05-04 (52).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Thumbnails\\900f31c5-4151-49e1-89bf-1089ef4b83d9_2023-05-04 (52).png"
     },
     {
       "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\Thumbnails\\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png",
