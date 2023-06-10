@@ -1,7 +1,21 @@
-﻿
+﻿@using FineBlog.Data;
+@using FineBlog.ViewModels;
+@inject ApplicationDbContext _context
+@{
+    var setting = _context.Settings!.ToList();
+    var vm = new SettingVM()
+            {
+                SiteName = setting[0].SiteName,
+                GithubUrl = setting[0].GithubUrl,
+                FacebookUrl = setting[0].FacebookUrl,
+                TwitterUrl = setting[0].TwitterUrl
+            };
+}
+
+
 @*
-<title>@ViewData["Title"] - FineBlog</title>    
-@RenderBody()      
+<title>@ViewData["Title"] - FineBlog</title>
+@RenderBody()
 @await RenderSectionAsync("Scripts", required: false)
 *@
 
@@ -12,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>@ViewData["Title"] - FineBlog</title>
+    <title>@ViewData["Title"] - @vm.SiteName</title>
     <link rel="icon" type="image/x-icon" href="~/blog/assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -26,7 +40,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Fine Blog</a>
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">@vm.SiteName</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -43,7 +57,6 @@
         </div>
     </nav>
     <!-- Page Header-->
-   
     <!-- Main Content-->
     @RenderBody()
     <!-- Footer-->
@@ -52,37 +65,54 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <ul class="list-inline text-center">
+
+                        <!--==========================URL related problem is solved by using chatgpt==========================-------->
+                        @{
+                            string twitterUrl = vm.TwitterUrl.StartsWith("http") ? new Uri(vm.TwitterUrl).Host : vm.TwitterUrl;
+                        }
                         <li class="list-inline-item">
-                            <a href="#!">
+                            <a href="https://@twitterUrl">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack"></i>
                                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
+                       
+                        
+                        @{
+                            string facebookUrl = vm.FacebookUrl.StartsWith("http") ? new Uri(vm.FacebookUrl).Host : vm.FacebookUrl;
+                        }
                         <li class="list-inline-item">
-                            <a href="#!">
+                            <a href="https://@facebookUrl">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
+
+                       
+                        @{
+                            string githubUrl = vm.GithubUrl.StartsWith("http") ? new Uri(vm.GithubUrl).Host : vm.GithubUrl;
+                        }
                         <li class="list-inline-item">
-                            <a href="#!">
+                            <a href="https://@githubUrl">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack"></i>
                                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
+
+
                     </ul>
-                    <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; @vm.SiteName 2023</div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
