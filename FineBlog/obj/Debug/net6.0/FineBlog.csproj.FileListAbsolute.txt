@@ -281,3 +281,6 @@ G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cr
 G:\FineBlog\FineBlog\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 G:\FineBlog\FineBlog\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 G:\FineBlog\FineBlog\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_LoginLayout.cshtml.rz.scp.css
+G:\FineBlog\FineBlog\bin\Debug\net6.0\JetBrains.Annotations.dll
+G:\FineBlog\FineBlog\bin\Debug\net6.0\X.PagedList.dll
+G:\FineBlog\FineBlog\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
