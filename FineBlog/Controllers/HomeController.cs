@@ -2,6 +2,7 @@
 using FineBlog.Models;
 using FineBlog.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace FineBlog.Controllers
@@ -25,7 +26,7 @@ namespace FineBlog.Controllers
             vm.Title = setting[0].Title;
             vm.ShortDescription = setting[0].ShortDescription;
             vm.ThumbnailUrl = setting[0].ThumbnailUrl;
-            vm.Posts = _context.Posts!.ToList();    
+            vm.Posts = _context.Posts!.Include(x=>x.ApplicationUser).ToList();    
             return View(vm);
         }
 
