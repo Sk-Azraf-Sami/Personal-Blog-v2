@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\dashboard\\css\\sb-admin-2.min.css"
     },
     {
+      "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\dashboard\\img\\loginImg.png",
+      "PackagePath": "staticwebassets\\dashboard\\img\\loginImg.png"
+    },
+    {
       "Id": "G:\\FineBlog\\FineBlog\\wwwroot\\dashboard\\img\\undraw_posting_photo.svg",
       "PackagePath": "staticwebassets\\dashboard\\img\\undraw_posting_photo.svg"
     },

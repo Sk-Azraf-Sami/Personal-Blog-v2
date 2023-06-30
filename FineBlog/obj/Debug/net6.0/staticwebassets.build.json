@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "95KRXNgcplNcV82Ase8QSBVw1p69W/s7ymr7SfN3Iy0=",
+  "Hash": "A596o0vMgp1183FiSZ3Re7KrYhPetK4iMpZuFBHYPWw=",
   "Source": "FineBlog",
   "BasePath": "_content/FineBlog",
   "Mode": "Default",
@@ -1324,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dashboard\\css\\sb-admin-2.min.css"
+    },
+    {
+      "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\dashboard\\img\\loginImg.png",
+      "SourceId": "FineBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\FineBlog\\FineBlog\\wwwroot\\",
+      "BasePath": "_content/FineBlog",
+      "RelativePath": "dashboard/img/loginImg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dashboard\\img\\loginImg.png"
     },
     {
       "Identity": "G:\\FineBlog\\FineBlog\\wwwroot\\dashboard\\img\\undraw_posting_photo.svg",
