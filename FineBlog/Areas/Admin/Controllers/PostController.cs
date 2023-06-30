@@ -57,7 +57,7 @@ namespace FineBlog.Areas.Admin.Controllers
             int pagesize = 5;
             int pageNumber = (page ?? 1);
 
-            return View(await listOfPostsVM.ToPagedListAsync(pageNumber,pagesize)); 
+            return View(await listOfPostsVM.OrderByDescending(x => x.CreatedDate).ToPagedListAsync(pageNumber,pagesize)); 
         }
 
         [HttpGet]
