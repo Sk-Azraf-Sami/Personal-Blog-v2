@@ -30816,6 +30816,118 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\0e84c150-a472-41a4-b192-33e82f51ca12_2023-05-04 (52).png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\1fefcf4a-8658-4ca9-8f30-63898d8b5a36_main-qimg-a26ef302f9ba16d1e10134718cc31baf-lq.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/1fefcf4a-8658-4ca9-8f30-63898d8b5a36_main-qimg-a26ef302f9ba16d1e10134718cc31baf-lq.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\1fefcf4a-8658-4ca9-8f30-63898d8b5a36_main-qimg-a26ef302f9ba16d1e10134718cc31baf-lq.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\2ba7a7c7-1e88-46b4-939e-de2e153da02d_fpri-hamilton-Russias-Tragic-Great-Power-Politics-adobestock_191928985-1280x854-1-1280x640.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/2ba7a7c7-1e88-46b4-939e-de2e153da02d_fpri-hamilton-Russias-Tragic-Great-Power-Politics-adobestock_191928985-1280x854-1-1280x640.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\2ba7a7c7-1e88-46b4-939e-de2e153da02d_fpri-hamilton-Russias-Tragic-Great-Power-Politics-adobestock_191928985-1280x854-1-1280x640.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\2f761be0-c9ed-487b-86d0-1938cb6c2f5e_main-qimg-d2ec818a691fd5e0ed3898cdf8df5f84-lq (1).png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/2f761be0-c9ed-487b-86d0-1938cb6c2f5e_main-qimg-d2ec818a691fd5e0ed3898cdf8df5f84-lq (1).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\2f761be0-c9ed-487b-86d0-1938cb6c2f5e_main-qimg-d2ec818a691fd5e0ed3898cdf8df5f84-lq (1).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\346b76e5-5b7a-4c2d-a8d1-2a2aeaec22dd_oic.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/346b76e5-5b7a-4c2d-a8d1-2a2aeaec22dd_oic.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\346b76e5-5b7a-4c2d-a8d1-2a2aeaec22dd_oic.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\3644d572-95f2-4bd6-b26b-f87643f901aa_-699781816.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/3644d572-95f2-4bd6-b26b-f87643f901aa_-699781816.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\3644d572-95f2-4bd6-b26b-f87643f901aa_-699781816.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\3c49ebe2-e208-4e42-a58b-4ac1694e68b4_main-qimg-b669a0323150a3f7b4bbaf727d377aff-pjlq.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/3c49ebe2-e208-4e42-a58b-4ac1694e68b4_main-qimg-b669a0323150a3f7b4bbaf727d377aff-pjlq.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\3c49ebe2-e208-4e42-a58b-4ac1694e68b4_main-qimg-b669a0323150a3f7b4bbaf727d377aff-pjlq.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\57ff92f4-745f-4f9c-9ff6-1b3e611f5cad_main-qimg-d873e71922258e1a40c6df6a55563403-lq.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/57ff92f4-745f-4f9c-9ff6-1b3e611f5cad_main-qimg-d873e71922258e1a40c6df6a55563403-lq.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\57ff92f4-745f-4f9c-9ff6-1b3e611f5cad_main-qimg-d873e71922258e1a40c6df6a55563403-lq.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png))">
       <SourceType>Package</SourceType>
       <SourceId>FineBlog</SourceId>
@@ -30831,6 +30943,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\7244cb9b-349f-4531-85ce-cdd5e500e9eb_2023-05-08 (46).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\77d9eea3-3ead-4d80-9f47-6604dda4bdcf_5720.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/77d9eea3-3ead-4d80-9f47-6604dda4bdcf_5720.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\77d9eea3-3ead-4d80-9f47-6604dda4bdcf_5720.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\89012ead-1dd3-43b6-b911-0949f8291f40_2023-05-08 (87).png))">
       <SourceType>Package</SourceType>
@@ -30848,6 +30976,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\89012ead-1dd3-43b6-b911-0949f8291f40_2023-05-08 (87).png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\8b944bf5-df95-4931-8e00-30a306aa5b75_main-qimg-4b78326099874fa5dd4b204590d9c984-lq.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/8b944bf5-df95-4931-8e00-30a306aa5b75_main-qimg-4b78326099874fa5dd4b204590d9c984-lq.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\8b944bf5-df95-4931-8e00-30a306aa5b75_main-qimg-4b78326099874fa5dd4b204590d9c984-lq.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\900f31c5-4151-49e1-89bf-1089ef4b83d9_2023-05-04 (52).png))">
       <SourceType>Package</SourceType>
       <SourceId>FineBlog</SourceId>
@@ -30863,6 +31007,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\900f31c5-4151-49e1-89bf-1089ef4b83d9_2023-05-04 (52).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\a123bd61-6b15-4e9e-a035-06d516f4a5dd_maxresdefault.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/a123bd61-6b15-4e9e-a035-06d516f4a5dd_maxresdefault.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\a123bd61-6b15-4e9e-a035-06d516f4a5dd_maxresdefault.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\af117c9c-d1b2-441b-8b3c-7ca3b3b5332a_1518802159_4002664_1518802000_0033808IMG_4027.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/af117c9c-d1b2-441b-8b3c-7ca3b3b5332a_1518802159_4002664_1518802000_0033808IMG_4027.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\af117c9c-d1b2-441b-8b3c-7ca3b3b5332a_1518802159_4002664_1518802000_0033808IMG_4027.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\b3b38238-25e2-4a1d-93e6-424a6d9fd0ca_2023-05-24 (2).png))">
       <SourceType>Package</SourceType>
@@ -30895,6 +31071,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\e04ea5af-22ec-408e-a9fe-57fcf827a15f_2023-05-04 (52).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\e99187f5-b2f1-454e-8ea5-4c4a50c2bd5e_images.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FineBlog</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FineBlog</BasePath>
+      <RelativePath>Thumbnails/e99187f5-b2f1-454e-8ea5-4c4a50c2bd5e_images.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\e99187f5-b2f1-454e-8ea5-4c4a50c2bd5e_images.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Thumbnails\thumbnail-default.png))">
       <SourceType>Package</SourceType>
